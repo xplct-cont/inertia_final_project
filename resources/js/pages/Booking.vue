@@ -1,26 +1,26 @@
 <template>
-<div class="card" style="width: 200px; left: 500px;">
-        <h1>Bookings</h1>
-     </div>
+<div class="card" style="width: 1000px; left: 110px;">
+        <h1 class="text-center" style="font-size: 30px; color: dimgray;">BOOKINGS</h1>
+     
+     <table class="table rounded bg-success text-light" style="margin:auto;">
 
-   
-    <div class="col-md-10" style=" margin-left: 150px; margin-top: 20px;">
-     <table class="table table-bordered bg-success rounded">
-      <thead class="text-center text-light">
-        <tr>
-            <th>Operator</th>
-            <th>Bus Name</th>
-            <th>Point of Origin</th>
-            <th>Start Time</th>
-            <th>Destination</th>
-            <th>Drop Time</th>
-            <th>Ticket No</th>
-            <th>Passenger Name</th>
-            <th>Age</th>
-        </tr>
-      </thead>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Bus Name</th>
+                <th>Point of Origin</th>
+                <th>Start Time</th>
+                <th>Destination</th>
+                <th>Drop Time</th>
+                <th>Ticket No</th>
+                <th>Passenger Name</th>
+                <th>Age</th>
+                <hr>
 
-      <tbody class="text-center bg-secondary text-white">
+            </tr>
+        </thead>
+
+              <tbody class="text-center bg-secondary text-white">
            <tr v-for="booking in bookings" :key="booking.id">
             <td>{{booking.operator}}</td>
             <td>{{booking.bus_name}}</td>
@@ -31,15 +31,22 @@
             <td>{{booking.ticket_no}}</td>
             <td>{{booking.passenger_name}}</td>
             <td>{{booking.age}}</td>
-
             </tr>
             
 
       </tbody>
 
 
+
      </table>
+
+
+
+
+
      </div>
+
+   
 </template>
 
 <script setup>
