@@ -7,7 +7,14 @@ use Illuminate\Http\Request;
 
 class BookingController extends Controller
 {
+
+
     public function index(){
-        return inertia('Booking');
+        
+       $bookings = Booking::get();
+
+        return inertia('Booking', [
+            'bookings' => $bookings
+        ]);
     }
 }
