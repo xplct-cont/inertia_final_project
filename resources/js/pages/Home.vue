@@ -2,7 +2,11 @@
 
 <div class="card bg-light shadow-lg p-2 bg-white" style="width: 45%; left: 600px; top: -30px; height: 282px;;">
 <img src="/images/bus2.png" alt="" width="500" height="280" class="rounded" >
-
+<div class="overlay">
+  <img src="/images/backdrop.png" alt="" width="510" height="290" class="rounded" >
+    <div class="text" style="font-size: 30px; margin-top: 90px; font-family:'Courier New', Courier, monospace">Travel To Live <br>
+    Live To Travel</div>
+  </div>
 </div>
 
 
@@ -113,6 +117,38 @@ img{
     left:79%;
 }
 
+
+
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: gray;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.card:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
 
 
 </style>

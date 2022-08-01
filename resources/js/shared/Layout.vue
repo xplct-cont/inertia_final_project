@@ -1,10 +1,10 @@
 <template>
     
-<nav class="navbar bg-light shadow-lg p-2 mb-5 bg-white" style="margin:auto; height: 56px;" >
+<nav class="navbar bg-success shadow-lg p-2 mb-5 bg-success" style="margin:auto; height: 56px;" >
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="/images/logo.png" alt="" width="50" height="50" >
-      <p style="position:relative; left:-23px;">&nbsp;Bus Booking System</p>
+      <p style="position:relative; left:-23px; color:white;">&nbsp;Bus Booking System</p>
     </a>
   </div>
 </nav>
@@ -61,14 +61,14 @@ body {
 }
  
 .sidebar a.active {
-  background-color: #04AA6D;
+  background-color: #292b2c;
   color: white;
 }
 
 
 
 .sidebar a:hover:not(.active) {
-  background-color: #555;
+  background-color: gray;
   color: white;
 }
 
