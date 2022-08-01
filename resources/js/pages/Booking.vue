@@ -1,17 +1,19 @@
 <template>
-
+<div class="card" style="width: 200px; left: 500px;">
         <h1>Bookings</h1>
 
      <p>{{message}}</p>
      <button @click="decrement">-</button>
      <p>{{number}}</p>
      <button @click="increment">+</button>
+     </div>
 </template>
 
 <script setup>
 import {ref} from 'vue'
-
-        const message = "Hello This is testing";
+import Layout from '../shared/Layout.vue'
+       
+       const message = "Hello This is testing";
         
         const number = ref(0)
 
@@ -22,5 +24,13 @@ import {ref} from 'vue'
         function decrement(){
             number.value--;
         }
+
+</script>
+
+<script>
+export default {
+   
+   layout: Layout
+}
 
 </script>
