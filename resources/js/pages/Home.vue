@@ -2,9 +2,9 @@
 
 <div class="card bg-light shadow-lg p-2 bg-white" style="width: 45%; left: 600px; top: -30px; height: 282px;;">
 <img src="/images/bus2.png" alt="" width="500" height="280" class="rounded" >
-<div class="overlay">
+<div class="overlay rounded">
   <img src="/images/backdrop.png" alt="" width="510" height="290" class="rounded" >
-    <div class="text" style="font-size: 30px; margin-top: 90px; font-family:'Courier New', Courier, monospace">Travel To Live <br>
+    <div class="text" style=" font-size: 30px; margin-top: 90px; font-family:'Courier New', Courier, monospace">Travel To Live <br>
     Live To Travel</div>
   </div>
 </div>

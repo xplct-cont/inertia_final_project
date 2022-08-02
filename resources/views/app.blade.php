@@ -9,15 +9,7 @@
     @vite('resources/css/app.css')
     @inertiaHead
 
-    <style>
-      body{
-        background-image: url('./images/bac.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-        background-attachment: fixed;
-      }
-    </style>
+   
   </head>
  
 

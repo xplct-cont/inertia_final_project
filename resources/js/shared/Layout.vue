@@ -15,7 +15,7 @@
   <Link class="rounded" :class="{'active': $page.component=='Home'}" href="/">  <i class="fa fa-home">&nbsp;&nbsp;&nbsp;</i>Home </Link>
 
 
-  <Link class="rounded" :class="{'active': $page.component=='Bus'}" href="/bus"><i class="fa fa-bus">&nbsp;&nbsp;&nbsp;</i>Buses</Link>
+  <Link class="rounded" :class="{'active': $page.component=='Service'}" href="/service"><i class="fa fa-bus">&nbsp;&nbsp;&nbsp;</i>Buses</Link>
 
   <Link class="rounded" :class="{'active': $page.component=='Booking'}"  href="/booking"><i class="fa fa-list">&nbsp;&nbsp;&nbsp;</i>Bookings</Link>
 

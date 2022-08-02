@@ -2,7 +2,7 @@
 <div class="card" style="width: 1000px; left: 110px;">
         <h1 class="text-center" style="font-size: 30px; color: dimgray;">BOOKINGS</h1>
      
-     <table class="table rounded bg-success text-light" style="margin:auto;">
+     <table class="table rounded bg-success text-light" style="margin:auto">
 
         <thead>
             <tr>
@@ -15,7 +15,7 @@
                 <th>Ticket No</th>
                 <th>Passenger Name</th>
                 <th>Age</th>
-                <hr>
+                
 
             </tr>
         </thead>
