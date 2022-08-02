@@ -11,7 +11,7 @@ class BookingController extends Controller
 
     public function index(){
         
-       $bookings = Booking::get();
+       $bookings = Booking::with('services')->get();
 
         return inertia('Booking', [
             'bookings' => $bookings

@@ -1,27 +1,26 @@
 <template>
 
 
-<div class="d-flex align-contents-between">
+<div class="d-flex align-contents-between" style="position:relative; left:85px; ">
 
 
-  <div class="card mb-3" style="margin-left: 200px;" v-for="bus in buses" :key="bus.id">
-     <div class="card-header bg-success">
-        <h3>{{bus.bus_name}}</h3>
+  <div class="card mb-3" style="margin-left:20px;" v-for="booking in services" :key="booking.id">
+     <div class="card-header bg-success" >
+        <h3>{{booking.bus_name}}</h3>
         
-  
      </div>
-          
-          <div class="card-body">
+        
+          <div class="card-body" style="width: 200px;">
             <h5>Specifications</h5>
           </div>
-
-
-          <!-- <ul>
-            <li v-for="service in services" :key="service.id">
-            {{service.maximum_seats}}
+          <ul>
+            <li v-for="capacity in booking.services" :key="capacity.id">
+            {{capacity.maximum_seats}}  
+             {{capacity.plate_no}} 
+            {{capacity.franchise_no}}
 
             </li>
-          </ul> -->
+          </ul>
   </div>
 
 </div>
@@ -48,7 +47,7 @@ export default {
 
     props: {
     // services: Array
-    buses: Array
+    services: Array
    
    },
 

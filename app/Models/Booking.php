@@ -11,10 +11,10 @@ class Booking extends Model
 
     protected $fillable = ['operator', 'bus_name', 'point_of_origin', 'start_time', 'destination', 'drop_time', 'ticket_no', 'passenger_name', 'age'];
 
+      
 
-
-// public function services(){
-//     return $this->hasMany('App\Models\Service');
-// }
+public function services(){
+    return $this->hasMany('App\Models\Service');
+}
 
 }

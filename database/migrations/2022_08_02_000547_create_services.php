@@ -15,10 +15,15 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('booking_id');
             $table->string('maximum_seats');
             $table->string('plate_no');
             $table->string('franchise_no');
             $table->timestamps();
+
+
+
+
         });
     }
 
