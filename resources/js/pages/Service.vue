@@ -2,30 +2,28 @@
 
 
 <div class="d-flex align-contents-between">
-<h1 class="text-center" style="font-size: 30px; color:dimgray; position:relative; left: 480px;">Available Buses</h1>
 
- <div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded" style="margin-top: 100px;" >
 
-  
-<div class="card-header bg-success" >
-   
-           Bus Name
-           </div>
-    
-
-    <div class="card-body">
-        Specifications:
-    </div>
-   
-
-    <ul >
-        <li style="margin-right:20px;" v-for = "service in services" :key="service.id">
-        {{service.maximum_seats}} {{service.plate_no}} {{service.franchise_no}}
+  <div class="card mb-3" style="margin-left: 200px;" v-for="bus in buses" :key="bus.id">
+     <div class="card-header bg-success">
+        <h3>{{bus.bus_name}}</h3>
         
-        </li>
-       
-    </ul>
-   </div>
+  
+     </div>
+          
+          <div class="card-body">
+            <h5>Specifications</h5>
+          </div>
+
+
+          <!-- <ul>
+            <li v-for="service in services" :key="service.id">
+            {{service.maximum_seats}}
+
+            </li>
+          </ul> -->
+  </div>
+
 </div>
 
 
@@ -49,7 +47,8 @@ export default {
  
 
     props: {
-    services: Array
+    // services: Array
+    buses: Array
    
    },
 

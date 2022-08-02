@@ -11,8 +11,12 @@ class Service extends Model
 
     protected $fillable = ['maximum_seats', 'plate_no', 'franchise_no'];
 
-    public function booking(){
-        return $this->belongsTo('App\Models\Booking');
+    // public function booking(){
+    //     return $this->belongsTo('App\Models\Booking');
+    // }
+
+    public function bus(){
+        return $this->belongsTo('App\Models\Bus');
     }
 
 

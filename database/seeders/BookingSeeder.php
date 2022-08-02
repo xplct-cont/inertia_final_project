@@ -70,8 +70,8 @@ class BookingSeeder extends Seeder
             ],
            
         ];
-        foreach($bookings as $booking){
-            Booking::create($booking);
+        foreach($bookings as $b){
+            Booking::create($b);
         }
     }
 }
