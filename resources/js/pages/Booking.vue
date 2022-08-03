@@ -1,6 +1,6 @@
 <template>
 <div class="card" style="width: 1000px; left: 110px;">
-        <h1 class="text-center" style="font-size: 30px; color: dimgray;">BOOKINGS</h1>
+        <h1 class="text-center" style="font-size: 30px; font-family: 'Courier New', Courier, monospace; color: dimgray;">BOOKINGS</h1>
      
      <table class="table rounded bg-success text-light" style="margin:auto">
 
